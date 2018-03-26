@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+
+	<!-- build:css css/vendor.min.css -->
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
+	<link rel="stylesheet" href="css/weather-icons.css">
+	<!-- endbuild -->
+
+	<!-- build:css css/custom.css -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- endbuild -->
+
+</head>
+<body>
+
+<!-- PAGE CONTENT -->
+	<main class="main-page">
+		<section class="section-articles">
+			<div class="container grid">
+				<article class="main-slider grid-item grid-item_width-5" id="main-slider">
+					<div class="main-slider-item__img">
+						<img src="img/main-sl-1.jpg" alt="slide img" class="img">
+					</div>
+					<div class="main-slider-item__img">
+						<img src="img/main-sl-2.jpg" alt="slide img" class="img">
+					</div>
+					<div class="main-slider-item__img">
+						<img src="img/main-sl-1.jpg" alt="slide img" class="img">
+					</div>
+				</article>
+
+				<article class="article-socials grid-item grid-item_width-2">
+					<a href="#" class="socials-item tw">
+						<i class="fab fa-twitter social-icon"></i>
+					</a>
+					<a href="#" class="socials-item dr">
+						<i class="fab fa-dribbble social-icon"></i>
+					</a>
+					<a href="#" class="socials-item gl">
+						<i class="fab fa-google-plus-g social-icon"></i>
+					</a>
+					<a href="#" class="socials-item fb">
+						<i class="fab fa-facebook-f social-icon"></i>
+					</a>
+				</article>
+
+				<article class="grid-item article-person">
+					<div class="article-person-img">
+						<a href="#"><img class="img" src="img/person-1.jpg" alt="person image"></a>
+					</div>
+					<div class="article-person-content">
+						<p class="article-title"><a href="#" class="article-link">Tony Stark is Iron Man</a></p>
+						<p class="article-posted">Posted on <time datetime="2013-08-30">30th August 2013</time></p>
+					</div>
+					<div class="article-person-action">
+						<button class="person-action">
+							<i class="fas fa-eye person_icon"></i>
+							<span class="person-action-txt">256</span>
+						</button>
+						<button class="person-action">
+							<i class="far fa-comment person_icon"></i>
+							<span class="person-action-txt">12</span>
+						</button>
+						<button class="person-action">
+							<i class="far fa-heart person_icon"></i>
+							<span class="person-action-txt">83</span>
+						</button>
+					</div>
+				</article>
+
+				<article class="grid-item grid-item_width-6 article-nav">
+					<nav class="nav">
+						<button data-activates="mobile-menu" class="nav__mobile-btn">menu</button>
+						<ul class="deskt-menu">
+							<li><a href="#" class="deskt-menu__item"><i class="fas fa-home fa-2x"></i></a></li>
+							<li><a href="#" class="deskt-menu__item">About</a></li>
+							<li><a href="#" class="deskt-menu__item">Services</a></li>
+							<li><a href="#" class="deskt-menu__item">Portfolio</a></li>
+							<li><a href="#" class="deskt-menu__item">Blog</a></li>
+							<li><a href="#" class="deskt-menu__item">Contact</a></li>
+						</ul>
+						<div class="menu_mask"></div>
+						<div class="menu_wrap">
+							<ul class="side-nav" id="mobile-menu">
+								<li><a href="#"><i class="fas fa-home"></i></a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+					<form action="#" class="search" id="search">
+						<div class="input-field">
+							<input class="input search-input" title="search" type="text">
+							<span class="input-label">Search</span>
+							<button type="submit" class="search-btn"><i class="fas fa-search search_icon"></i></button>
+						</div>
+					</form>
+				</article>
+
+				<article class="grid-item accordeon">
+					<ul class="accordeon_list">
+						<li class="accordeon_item">
+							<a href="#" class="accordeon_trigger">
+								<span class="accordeon_trigger_span">Web Design</span>
+								<span class="accordeon_trigger_span-2">12</span>
+							</a>
+							<ul class="accordeon_inner">
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Ecommerce</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Blogs</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Porffolio</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon_item">
+							<a href="#" class="accordeon_trigger">
+								<span class="accordeon_trigger_span">Print Design</span>
+								<span class="accordeon_trigger_span-2">16</span>
+							</a>
+							<ul class="accordeon_inner">
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Ecommerce</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Blogs</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Porffolio</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="accordeon_item">
+							<a href="#" class="accordeon_trigger">
+								<span class="accordeon_trigger_span">Photography</span>
+								<span class="accordeon_trigger_span-2">52</span>
+							</a>
+							<ul class="accordeon_inner">
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Ecommerce</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Blogs</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+								<li class="accordeon_inner-item">
+									<a href="#" class="accordeon_inner-link">
+										<span class="accordeon_inner-link_span-1">Porffolio</span>
+										<span class="accordeon_inner-link_span-2">3</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+
+				<article class="article-account grid-item grid-item_width-2">
+					<div class="follow">
+						<div class="follow__img">
+							<a href="#" class="follow-img__link"><img class="img" src="img/person-2.png" alt="person image"></a>
+						</div>
+						<div class="follow__content">
+							<p class="follow__title"><a href="#" class="follow-link">Scarlett Johanson</a></p>
+							<p class="follow__nicname">Black Widow</p>
+						</div>
+						<div class="follow__action">
+							<button class="follow__btn">Follow <i class="fas fa-plus-circle follow_icon"></i></button>
+						</div>
+					</div>
+					<div class="article-dropdown">
+						<div class="dropdown-wrapper">
+							<button id="dropdown-button" class="dropdown-button dropdown-button1 btn">Dropdown Normal<span class="badge-item"></span></button>
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="#" class="dropdown-content__item">one</a></li>
+								<li><a href="#" class="dropdown-content__item">two</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-wrapper">
+							<button class="dropdown-button dropdown-button2 show">Dropdown Active<span class="badge-item"></span></button>
+							<ul id="dropdown2" class="dropdown-content show">
+								<li><a href="#" class="dropdown-content__item">one</a></li>
+								<li><a href="#" class="dropdown-content__item">two</a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article class="grid-item grid-item_width-3 article-weather" id="article-weather">
+					<div id="monday" class="article-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit">&deg;F</span>
+								<span class="temp-format__item cesium active">&deg;C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-day-sunny"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">21</span><span class="num fahrenheit">105</span>&deg;
+							</div>
+						</div>
+					</div>
+					<div id="tuesday" class="article-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit">&deg;F</span>
+								<span class="temp-format__item cesium active">&deg;C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-cloud"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">8</span><span class="num fahrenheit">40</span>&deg;
+							</div>
+						</div>
+					</div>
+					<div id="wednesday" class="article-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit">&deg;F</span>
+								<span class="temp-format__item cesium active">&deg;C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-day-sprinkle"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">23</span><span class="num fahrenheit">110</span>&deg;
+							</div>
+						</div>
+					</div>
+					<div id="thursday" class="article-weather__day">
+						<div class="day-info">
+							<div class="day-info__city">Exeter, UK</div>
+							<div class="day-info__temp-format">
+								<span class="temp-format__item fahrenheit">&deg;F</span>
+								<span class="temp-format__item cesium active">&deg;C</span>
+							</div>
+						</div>
+						<div class="day-main">
+							<div class="day-main__img"><i class="wi wi-cloud"></i></div>
+							<div class="day-main__temp">
+								<span class="num cesium active">13</span><span class="num fahrenheit">80</span>&deg;
+							</div>
+						</div>
+					</div>
+					<ul id="tabs-weather" class="tabs days-list">
+						<li class="tab">
+							<a href="#monday" class="days-list__item">
+								<span class="img"><i class="wi wi-day-sunny"></i></span>
+								<span class="txt">Monday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#tuesday" class="days-list__item">
+								<span class="img"><i class="wi wi-cloud"></i></span>
+								<span class="txt">Tuesday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#wednesday" class="days-list__item">
+								<span class="img"><i class="wi wi-day-sprinkle"></i></span>
+								<span class="txt">Wednesday</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="#thursday" class="days-list__item">
+								<span class="img"><i class="wi wi-cloud"></i></span>
+								<span class="txt">Thursday</span>
+							</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="grid-item grid-item_width-3 article-calendar">
+					<div id="datepicker"></div>
+				</article>
+				
+				<article class="grid-item article-actions">
+					<label class="switch">
+						<div class="switch-item_text">Switch ON</div>
+						<div class="switch-item">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</div>
+					</label>
+					<label class="switch">
+						<div class="switch-item_text">Switch OFF</div>
+						<div class="switch-item">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</div>
+					</label>
+					<input type="text" id="double-range" name="" value="" />
+					<input type="text" id="single-range" name="" value="" />
+
+				</article>
+
+				<article class="grid-item grid-item_width-3 article-messages">
+					<div class="messages-list">
+						<p class="messages-list__item success">Congratulations! You have been successful <i class="messages-icon far fa-times-circle"></i></p>
+						<p class="messages-list__item attention">Attention! I recommend you look at me <i class="messages-icon far fa-times-circle"></i></p>
+						<p class="messages-list__item warning">Warning! Are you sure you to do this? <i class="messages-icon far fa-times-circle"></i></p>
+						<p class="messages-list__item err">Oops! Something goes wrong <i class="messages-icon far fa-times-circle"></i></p>
+					</div>
+				</article>
+				
+				<article class="grid-item grid-item_width-4 article-form">
+					<form action="#" class="cmxform" id="reg-form" method="POST">
+						<div class="row">
+							<div class="input-field username">
+								<input class="input" title="username" name="username" type="text">
+								<span class="input-label">Username</span>
+							</div>
+							<div class="input-field password">
+								<input class="input" title="password" name="password" type="password">
+								<span class="input-label">Password</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field email">
+								<input class="input" title="email" name="email" type="email">
+								<span class="input-label">Email</span>
+							</div>
+							<div class="input-field input-active">
+								<input class="input" title="input-active" name="input-active" type="text">
+								<span class="input-label">Active</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field message">
+								<textarea name="message" title="message" class="input textarea" cols="1" rows="1"></textarea>
+								<span class="input-label">Message</span>
+								<button type="submit" class="sbmt-btn">Login</button>
+							</div>
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+	</main>
+<!-- END PAGE CONTENT -->
+  
+<!-- SCRIPTS -->
+
+	<!-- build:js js/vendor.js -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/fontawesome-all.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js js/custom.js -->
+	<script src="js/custom.js"></script>
+	<!-- endbuild -->
+
+<!-- END SCRIPTS -->
+
+</body>
+</html>

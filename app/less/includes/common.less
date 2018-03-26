@@ -1,0 +1,55 @@
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	background: #303030;
+	color: #000;
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.main-page {
+	background: linear-gradient(45deg, #0b5c56, #053a72);
+	display: grid;
+}
+
+.section-articles {
+	padding: 50px 0 0 0;
+}
+
+button {
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+/* **************** MEDIA ****************** */
+@media only screen and (max-width : 1400px) {
+	.container {
+		width: 97%;
+	}
+}
+@media only screen and (max-width : 600px) {
+	.container {
+		width: 90%;
+	}
+}

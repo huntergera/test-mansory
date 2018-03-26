@@ -1,0 +1,45 @@
+/* **************** ARTICLE SOCIALS ****************** */
+.article-socials {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 100px 100px;
+}
+
+.socials-item {
+	background: #00acee;
+	cursor: pointer;
+	display: inline-block;
+	height: 110px;
+	position: relative;
+	transition: transform .2s ease-in-out;
+	width: 100px;
+
+	&:hover {
+		transform: scale(.9);
+	}
+
+	&:active {
+		transform: scale(.85);
+	}
+
+	.social-icon {
+		color: #fff;
+		font-size: 63px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+.dr {
+	background: #ed4a89;
+}
+
+.gl {
+	background: #d6492e;
+}
+
+.fb {
+	background: #3b589c;
+}

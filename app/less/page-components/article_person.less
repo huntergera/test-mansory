@@ -1,0 +1,78 @@
+/* **************** ARTICLE PERSON ****************** */
+.article-person {
+	background: #fff;
+	box-shadow: 1px 3px 3px 0 rgba(0,0,0,.2);
+	.article-person-content {
+		height: 56px;
+		padding: 10px;
+
+		.article-title {
+			color: #696969;
+			font-size: 14px;
+			line-height: 1;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap;
+			margin-bottom: 8px;
+		}
+
+		.article-link {
+			color: #696969;
+		}
+
+		.article-posted {
+			color: #03b1bc;
+			font-size: 12px;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+			white-space: nowrap;
+		}
+	}
+
+	.article-person-action {
+		border-top: 0;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.person-action {
+		background: #00b2b2;
+		border-right: 1px solid #6be5e6;
+		border-radius: 0;
+		padding: 0;
+		height: 34px;
+		line-height: 34px;
+		width: 33.33%;
+		transition: background 0.3s ease-in-out;
+		outline: none;
+		&:last-child {
+			border-right: 0;
+		}
+		&:focus {
+			background-color: #00b2b2;
+		}
+		&:hover {
+			background: darken(#00b2b2, 5%);
+		}
+
+		> * {
+			display: inline-block;
+		font-size: 12px;
+			vertical-align: middle;
+		}
+	}
+
+	.person-action-txt {
+		color: #6be5e6;
+	}
+
+	.person_icon {
+		color: #6be5e6;
+	}
+}
+
+.article-person-img {
+	max-height: 160px;
+	overflow: hidden;
+}
